@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+     
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper {
+      width: 340px;
+      height: 420px;
+      position: fixed;
+      right: 150px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .swiper-slide:nth-child(1n) {
+     background-image: url(https://th.bing.com/th/id/OIP.-9HGERLOgrbqq9doseJOsAHaHa?rs=1&pid=ImgDetMain);
+     background-size: cover;
+     background-repeat: no-repeat;
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-image: url(https://th.bing.com/th/id/R.ffe05fa5aa01793e50c514f5354a554d?rik=LNIo5IKoufy3jA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f30%2fMercury_in_color_-_Prockter07_centered.jpg&ehk=hStJB0rzK0zy9jNZr64UFIjLNC6F0H3ZLHx%2fChYHvbs%3d&risl=&pid=ImgRaw&r=0);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+
+    .swiper-slide:nth-child(3n) {
+      background-image: url(https://th.bing.com/th/id/R.3e726a31eec96136ff62a2264e21b7c3?rik=UVEB71WeUvmVUg&riu=http%3a%2f%2fipadwallpaper.net%2fuploads%2fwallpapers%2f2011%2f04%2f2-ipad-wallpaper-planet-earth-212.png&ehk=GZTaosjYYQg4o%2fWWlj3X0UvwxJPTq0hMee1n2s%2bmfUM%3d&risl=&pid=ImgRaw&r=0);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .swiper-slide:nth-child(4n) {
+     background-image: url(https://wallpapercave.com/wp/wp2305581.jpg);
+     background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-image: url(https://4.bp.blogspot.com/-QhFiH3FA3CU/V6kDRakcIHI/AAAAAAAAAVY/Wk-foDSTrokSaXjmFt4JJYBH9VL-VFUhgCLcB/s1600/jupiter.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-image: url(https://th.bing.com/th/id/OIP.8rmJnBWJxwcFqVQPPm463gAAAA?rs=1&pid=ImgDetMain);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    .swiper-slide:nth-child(7n) {
+     background-image: url(https://images.interestingengineering.com/img/iea/MRw4ZB55G1/uranus.jpg);
+     background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .swiper-slide:nth-child(8n) {
+     background-image: url(https://th.bing.com/th/id/OIP.okCOpkfnMwqXqMQqEdDU-AHaE8?rs=1&pid=ImgDetMain);
+     background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+    }
+
+   
+  </style>
+</head>
+
+<body>
+  <!-- making a container for info -->
+  <!-- Swiper -->
+<section id="card-container">
+  <video id="myvideo" autoplay loop muted src="solar.mp4"></video>
+  <!-- video -->
+  <div id="info">
+  <div class="info-2"> <h3>The Solar System[d] is the gravitationally bound system of the Sun and the objects that orbit it.[11] It was formed 4.6 billion years ago when a dense region of a molecular cloud collapsed, forming the Sun and a protoplanetary disc. The Sun is an ordinary main sequence star that maintains a balanced equilibrium by the fusion of hydrogen into helium at its core, releasing this energy from its outer photosphere.
+
+    The largest objects that orbit the Sun are the eight planets. In order from the Sun, they are four terrestrial planets (Mercury, Venus, Earth and Mars); two gas giants (Jupiter and Saturn); and two ice giants (Uranus and Neptune). All terrestrial planets have solid surfaces. Inversely, all giant planets do not have a definite surface, as they are mainly composed of gases and liquids. Over 99.86% of the Solar System's mass is in the Sun and nearly 90% of the remaining mass is in Jupiter and Saturn.
+    
+    There is a strong consensus among astronomers[e] that the Solar System has at least eight dwarf planets: Ceres, Pluto, Haumea, Quaoar, Makemake, Gonggong, Eris, and Sedna. There are a vast number of small Solar System bodies, such as asteroids, comets, centaurs, meteoroids, and interplanetary dust clouds. Some of these bodies are in the asteroid belt (between Mars's and Jupiter's orbit) and the Kuiper belt (just outside Neptune's orbit).[f] Six planets, six dwarf planets, and other bodies have orbiting natural satellites, which are commonly called 'moons'.
+    
+    The Solar System is constantly flooded by the Sun's charged particles, the solar wind, forming the heliosphere. Around 75–90 astronomical units from the Sun, the solar wind is halted, resulting in the heliopause. This is the boundary of the Solar System to interstellar space. The outermost region of the Solar System is the theorized Oort cloud, the source for long-period comets, extending to a radius of 2,000–200,000 astronomical units (0.032–3.2 light-years). The closest star to the Solar System, Proxima Centauri, is 4.25 light-years (269,000 AU) away. Both stars belong to the Milky Way galaxy.</h3></div>
+  </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      
+    </div>
+  </div>
+</section>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+</body>
+
+</html>
